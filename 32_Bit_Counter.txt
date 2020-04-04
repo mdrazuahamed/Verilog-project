@@ -4,7 +4,8 @@ module Counter_32bit_161(Q, TC, P, PE, CEP, CET, CP, MR);
 	input [31:0] P;
 	output reg TC;
 	output reg [31:0] Q;
-	
+	//MR= master reset, P=input, Q= output
+	/
 	always @ (posedge CP, MR)
 	begin
 		if(MR == 0) Q = 0;
